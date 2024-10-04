@@ -9,3 +9,43 @@
     --maintext: #ffffff;
     --contacts: rgba(255, 255, 255, 0.6);
 }
+body {
+    font-family: "Roboto", sans-serif;
+}
+button {
+    font-family: "Roboto", sans-serif;
+}
+
+/*Хедер*/
+.header-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+.header-item {
+    font-weight: 500;
+}
+.header-adress {
+    font-weight: 500;
+}
+
+/*Футер*/
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+/*Студія*/
+.mainbanner-title {
+    font-weight: 900;
+}
+.mainbanner-button {
+    font-weight: 700;
+}
+
+/*Портфоліо*/
+.portfolio-button {
+    font-weight: 500;
+}
+.portfolio-category {
+    font-weight: 400;
+}
