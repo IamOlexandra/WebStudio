@@ -8,9 +8,20 @@
     --firstlogo: #000000;
     --maintext: #ffffff;
     --contacts: rgba(255, 255, 255, 0.6);
+    --border: #eeeeee;
+}
+a {
+    color: var(--firstlogo);
+    text-decoration: none;
+}
+ul {
+    list-style: none;
 }
 body {
     font-family: "Roboto", sans-serif;
+    line-height: 1.17;
+    font-family: Roboto;
+    letter-spacing: 0.03em;
 }
 button {
     font-family: "Roboto", sans-serif;
@@ -20,32 +31,139 @@ button {
 .header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
+    font-size: 26px;
+}
+.logo-axent {
+    color: var(--axent);
+}
+.header-now {
+    color: var(--axent);
 }
 .header-item {
     font-weight: 500;
+    letter-spacing: 0.02em;
+
 }
 .header-adress {
     font-weight: 500;
 }
+.header-link:hover,
+.header-link:focus,
+.header-adress-link:hover,
+.header-adress-link:focus {
+    color: var(--axent);
+}
+.header-logo:hover {
+    color: var(--axent);
+}
 
 /*Футер*/
+.footer {
+    background-color: var(--main);
+}
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
+    font-size: 26px;
+    color: var(--background);
+}
+.footer-logo:hover {
+    color: var(--axent);
+}
+.footer-link {
+    color: var(--contacts);
+    font-style: normal;
+}
+.footer-location {
+    color: var(--background);
 }
 
 /*Студія*/
+.mainbanner {
+    background-color: var(--main);
+}
 .mainbanner-title {
+    color: var(--maintext);
     font-weight: 900;
+    letter-spacing: 0.06em;
+
 }
 .mainbanner-button {
+    background-color: var(--axent);
+    color: var(--maintext);
+    border: none;
+    border-radius: 4px;
     font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+}
+.mainbanner-button:hover,
+.mainbanner-button:focus {
+    background-color: var(--section);
+    color: var(--firstlogo);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.features-text {
+    line-height: 1.71;
+    color: var(--text);
+}
+
+.activites-title {
+    font-size: 36;
+}
+
+.team {
+    background-color: var(--section);
+}
+.team-title {
+    font-size: 36;
+}
+.team-item {
+    background-color: var(--maintext);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.team-name {
+    font-size: 16px;
 }
 
 /*Портфоліо*/
+.hide {
+    display: none;
+}
 .portfolio-button {
     font-weight: 500;
+    background-color: var(--section);
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    line-height: 1.62;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--axent);
+    color: var(--maintext);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.portfolio-now {
+    background-color: var(--axent);
+    color: var(--maintext);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.portfolio-item {
+    border: var(--border) solid 1px;
+}
+.portfolio-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;    
 }
 .portfolio-category {
     font-weight: 400;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.87;
 }
