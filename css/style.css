@@ -57,6 +57,7 @@
     color: var(--maintext);
     font-weight: 900;
     letter-spacing: 0.06em;
+    font-size: 44px;
 
 }
 .mainbanner-button {
@@ -80,16 +81,19 @@
     line-height: 1.71;
     color: var(--text);
 }
+.features-title {
+    font-size: 14px;
+}
 
 .activites-title {
-    font-size: 36;
+    font-size: 36px;
 }
 
 .team {
     background-color: var(--section);
 }
 .team-title {
-    font-size: 36;
+    font-size: 36px;
 }
 .team-item {
     background-color: var(--maintext);
