@@ -9,6 +9,7 @@
     --maintext: #ffffff;
     --contacts: rgba(255, 255, 255, 0.6);
     --border: #eeeeee;
+    --heder-shadow: #ececec;
 }
 a {
     color: var(--firstlogo);
@@ -25,4 +26,13 @@ body {
 }
 button {
     font-family: "Roboto", sans-serif;
+}
+.main {
+    border-top: solid 1px var(--heder-shadow);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }

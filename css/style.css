@@ -1,4 +1,7 @@
 /*Хедер*/
+.header {
+    padding: 25px 0;
+}
 .header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -31,6 +34,7 @@
 /*Футер*/
 .footer {
     background-color: var(--main);
+    padding: 60px 0;
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -51,6 +55,7 @@
 
 /*Студія*/
 .mainbanner {
+    padding: 200px 0;
     background-color: var(--main);
 }
 .mainbanner-title {
@@ -77,6 +82,9 @@
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.features {
+    padding: 94px 0;
+}
 .features-text {
     line-height: 1.71;
     color: var(--text);
@@ -85,11 +93,15 @@
     font-size: 14px;
 }
 
+.activites {
+    padding-bottom: 94px;
+}
 .activites-title {
     font-size: 36px;
 }
 
 .team {
+    padding: 94px 0;
     background-color: var(--section);
 }
 .team-title {
@@ -105,6 +117,9 @@
 }
 
 /*Портфоліо*/
+.portfolio {
+    padding: 94px 0;
+}
 .hide {
     display: none;
 }
