@@ -88,6 +88,7 @@
 .mainbanner {
     padding: 200px 0;
     background-color: var(--main);
+    background-image: url("../img/banner.png");
 }
 .mainbanner-title {
     color: var(--maintext);
@@ -135,6 +136,30 @@
 .features-item {
     width: 270px;
     padding-left: 0;
+}
+.features-item::before {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--section);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.features-item:first-child::before {
+    background-image: url(../img/antenna.png);
+}
+.features-item:nth-child(2)::before {
+    background-image: url(../img/clock.png);
+}
+.features-item:nth-child(3)::before {
+    background-image: url(../img/diagram.png);
+}
+.features-item:last-child::before {
+    background-image: url(../img/astronaut.png);
 }
 .features-text {
     line-height: 1.71;
