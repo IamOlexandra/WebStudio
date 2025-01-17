@@ -10,6 +10,8 @@
     --contacts: rgba(255, 255, 255, 0.6);
     --border: #eeeeee;
     --heder-shadow: #ececec;
+    --logos: rgba(175, 177, 184, 1);
+    --buttons: rgba(255, 255, 255, 0.1);
 }
 h1, h2, h3, p, ul, li, input, button, img, a {
     margin: 0;
@@ -25,7 +27,6 @@ ul {
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.17;
-    font-family: Roboto;
     letter-spacing: 0.03em;
     min-width: max-content;
 }
