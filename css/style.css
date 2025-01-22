@@ -243,8 +243,8 @@
 }
 
 .activites {
+    position: relative;
     padding-bottom: 94px;
-
 }
 .activites-title {
     margin-bottom: 50px;
@@ -258,6 +258,17 @@
 .activites-title {
     font-size: 36px;
     text-align: center;
+}
+.activites-text {
+    position: absolute;
+    top: 316px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--background);
+    width: 370px;
+    text-align: center;
+    background-color: var(--text-backround);
+    padding: 27px 0;
 }
 
 .team {

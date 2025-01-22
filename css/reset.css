@@ -12,6 +12,7 @@
     --heder-shadow: #ececec;
     --logos: rgba(175, 177, 184, 1);
     --buttons: rgba(255, 255, 255, 0.1);
+    --text-backround: rgba(47, 48, 58, 0.8);
 }
 h1, h2, h3, p, ul, li, input, button, img, a {
     margin: 0;
