@@ -32,7 +32,30 @@
             <section class="mainbanner">
                 <div class="container">
                     <h1 class="mainbanner-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                    <button type="button" class="mainbanner-button">Замовити послугу</button>
+                    <button type="button" class="mainbanner-button" data-modal-open>Замовити послугу</button>
+
+                    <!--МОДАЛЬНЕ ВІКНО-->
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button type="button" class="modal-close" data-modal-close></button>
+                            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                            <form>
+                                <label for="modal-name" class="modal-label">Ім'я</label>
+                                <input type="text" class="modal-input" id="modal-name">
+                                <label for="modal-tel" class="modal-label">Телефон</label>
+                                <input type="tel" class="modal-input" id="modal-tel">
+                                <label for="modal-email" class="modal-label">Пошта</label>
+                                <input type="email" class="modal-input" id="modal-email">
+                                <label for="modal-comment" class="modal-label">Коментар</label>
+                                <textarea class="modal-input" id="modal-comment" placeholder="Введіть текст"></textarea>
+                                <div class="modal-wrap">
+                                    <input type="checkbox" id="modal-checkbox">
+                                    <label for="modal-checkbox" class="modal-label modal-text">Погоджуюся з розсилкою та приймаю <a href="#" class="modal-link">Умови договору</a></label>
+                                </div>
+                                <button type="submit" class="modal-submit">Відправити</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="features container">
@@ -158,7 +181,15 @@
                         <li class="footer-socialnetworks-item"><a href="#" class="footer-link footer-linkedin"></a></li>
                     </ul>
                 </div>
+                <div class="footer-subscribe">
+                    <h3 class="footer-title">Підпишіться на розсилку</h3>
+                    <form class="footer-form">
+                        <input class="footer-input" type="email" placeholder="E-mail">
+                        <button class="footer-button" type="submit">Підписатися</button>
+                    </form>
+                </div>
             </div>
         </footer>
+        <script src="./modal.js"></script>
     </body>
 </html>

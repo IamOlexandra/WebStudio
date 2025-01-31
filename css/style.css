@@ -106,6 +106,10 @@
     color: var(--contacts);
     font-style: normal;
 }
+.footer-fact:hover,
+.footer-fact:focus {
+    color: var(--axent);
+}
 .footer-item {
     margin-bottom: 9px;
 }
@@ -117,6 +121,7 @@
 }
 .footer-join {
     margin-left: 70px;
+    margin-right: 93px;
 }
 .footer-title {
     font-size: 14px;
@@ -154,6 +159,33 @@
 .footer-link:focus {
     background-color: var(--axent);
 }
+.footer-input {
+    background-color: transparent;
+    border: 1px solid var(--footer-border);
+    padding: 15px 16px;
+    width: 358px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+.footer-button {
+    background-color: var(--axent);
+    border: none;
+    color: var(--background);
+    padding: 15px 62px 15px 28px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    background-image: url(../img/subscribe.svg);
+    background-repeat: no-repeat;
+    background-position: 135px;
+}
+.footer-button:hover,
+.footer-button:focus {
+    background-color: var(--dark-axent);
+}
+
 
 /*Студія*/
 .mainbanner {
@@ -188,9 +220,146 @@
 }
 .mainbanner-button:hover,
 .mainbanner-button:focus {
-    background-color: var(--section);
-    color: var(--firstlogo);
+    background-color: var(--dark-axent);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*МОДАЛЬНЕ ВІКНО*/
+.backdrop {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: var(--modal);
+    z-index: 1;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid var(--modal);
+    border-radius: 50%;
+    background-image: url(../img/cross.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.modal-close:hover,
+.modal-close:focus {
+    background-image: url(../img/cross-hover.svg);
+}
+.modal-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.modal-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: var(--text);
+}
+.modal-input {
+    width: 448px;
+    border: 1px solid var(--modal-border);
+    padding: 12px 16px 12px 42px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.modal-input:focus-visible {
+    outline: none;
+    border-color: var(--axent);
+}
+#modal-comment {
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+#modal-comment::placeholder {
+    color: var(--modal-border);
+}
+#modal-name {
+    background-image: url(../img/name-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center left 12px;
+}
+#modal-tel {
+    background-image: url(../img/phone-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center left 12px;
+}
+#modal-email {
+    background-image: url(../img/email-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center left 12px;
+}
+#modal-name:focus-visible {
+    background-image: url(../img/name-icon-hover.svg);
+}
+#modal-tel:focus-visible {
+    background-image: url(../img/phone-icon-hover.svg);
+}
+#modal-email:focus-visible {
+    background-image: url(../img/email-icon-hover.svg);
+}
+.modal-link {
+    color: var(--axent);
+    text-decoration: underline;
+}
+#modal-checkbox {
+    width: 16px;
+    height: 15px;
+    margin: 0 8px 0 12px;
+}
+.modal-wrap {
+    display: flex;
+}
+.modal-submit {
+    display: block;
+    background-color: var(--axent);
+    border: none;
+    color: var(--background);
+    padding: 10px 52px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.modal-submit:hover,
+.modal-submit:focus {
+    background-color: var(--dark-axent);
 }
 
 .features {
