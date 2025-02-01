@@ -167,6 +167,11 @@
     font-size: 16px;
     border-radius: 4px;
     margin-right: 12px;
+    color: var(--text);
+}
+.footer-input:focus-visible {
+    outline: none;
+    border-color: var(--axent);
 }
 .footer-button {
     background-color: var(--axent);
