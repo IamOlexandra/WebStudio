@@ -1,4 +1,3 @@
-/*Хедер*/
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -41,6 +40,32 @@
 .header-adress-link:focus {
     color: var(--axent);
 }
+.header-link:hover::after,
+.header-link:focus::after,
+.header-adress-link:hover::after,
+.header-adress-link:focus::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--axent);
+    margin-top: 30px;
+    position: absolute;
+    border-radius: 2px;
+}
+.header-link {
+    position: relative;
+}
+.header-now::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--axent);
+    margin-top: 30px;
+    position: absolute;
+    border-radius: 2px;
+}
 .header-logo:hover {
     color: var(--axent);
 }
@@ -52,8 +77,8 @@
 }
 .header-adress-link {
     color: var(--text);
-    display: flex;
     align-items: center;
+    position: relative;
 }
 .header-adress-link::before {
     content: "";
@@ -64,6 +89,8 @@
     background-position: center left;
     align-self: center;
     margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .header-email::before {
     background-image: url(../img/email.svg);
@@ -167,7 +194,7 @@
     font-size: 16px;
     border-radius: 4px;
     margin-right: 12px;
-    color: var(--text);
+    color: var(--background);
 }
 .footer-input:focus-visible {
     outline: none;
@@ -643,6 +670,7 @@
     border: var(--border) solid 1px;
     width: 370px;
     height: 404px;
+    overflow: hidden;
 }
 .portfolio-link {
     margin-bottom: 30px;
@@ -668,4 +696,26 @@
     color: var(--text);
     line-height: 1.87;
     margin: 0 0 20px 24px;
+}
+.portfolio-box {
+    position: relative;
+    overflow: hidden;
+    height: 294px;
+}
+.portfolio-panel {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    background-color: var(--panel);
+    color: var(--background);
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 3%;
+    bottom: 0;
+    transform: translateY(-101%);
+    transition: transform 700ms ease;
+}
+.portfolio-link:hover .portfolio-item .portfolio-box .portfolio-panel {
+    transform: translateY(0);
 }
