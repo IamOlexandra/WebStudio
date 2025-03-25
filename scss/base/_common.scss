@@ -18,7 +18,16 @@ button {
     border-top: solid 1px var(--heder-shadow);
 }
 .container {
-    width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    width: 450px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        width: 798px;
+    }
+    @media (min-width: 1199px) {
+        width: 1200px;
+        padding: 0 15px;
+    }
+}
+* {
+    box-sizing: border-box;
 }
