@@ -32,3 +32,7 @@ button {
         padding: 0 15px;
     }
 }
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
