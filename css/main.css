@@ -605,12 +605,19 @@ button {
 
 .mainbanner {
   padding: 118px 0;
-  background-image: url("../img/banner.png");
   background-color: var(--main);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/banner.png");
 }
 @media (min-width: 1199px) {
   .mainbanner {
     padding: 200px 0;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .mainbanner {
+    background-image: url("../img/banner@2x.png");
   }
 }
 
