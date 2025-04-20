@@ -3,6 +3,8 @@
     background-color: var(--main);
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 1600px;
+    margin: 0 auto;
     @media (min-width: 1199px) {
         padding: 200px 0;
     }

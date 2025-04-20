@@ -608,6 +608,8 @@ button {
   background-color: var(--main);
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: 0 auto;
   background-image: url("../img/banner.png");
 }
 @media (min-width: 1199px) {
